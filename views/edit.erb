@@ -1,0 +1,6 @@
+<%#<form action="/videos/<%= @video['id'] %><%#" method="post">  %>
+  <input type="hidden" name="_method" value="put">
+  <input type="text" name="title" value="<%= @video['title'] %>">
+  <input type="text" name="url" value="<%= @video['url'] %>">
+  <button id="edit">Edit Video</button>
+<%#</form>

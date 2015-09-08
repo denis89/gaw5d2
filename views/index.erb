@@ -1,0 +1,12 @@
+<h2>index</h2>
+
+<% @videos.each do |video| %>
+  <div class="video">
+    <h3><a href="/videos/<%= video['id'] %>"><%= video['title'] %></a></h3>  
+  </div>
+  
+<% end %>
+
+<h2>Random!</h2>
+
+<h3><%= @random['title'] %> </h3>
