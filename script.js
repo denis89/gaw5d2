@@ -16,7 +16,11 @@ $(document).ready(function(){
     }  
   })
 
-
+   function deleteVideo(){
+    request('DELETE', '/videos/:id/delete' + taskId, null).done(function(response){
+    console.log(response);
+  })
+   }
    
 
    // What's an event delegation?
